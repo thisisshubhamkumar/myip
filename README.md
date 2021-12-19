@@ -10,11 +10,11 @@ ip address of client
 `base:` https://thisisshubhamkumar.github.io/myip/base.html
 
 
-`base:` https://thisisshubhamkumar.github.io/myip/map.html
+`map:` https://thisisshubhamkumar.github.io/myip/map.html
 
-`base:` https://thisisshubhamkumar.github.io/myip/jgeo.html
+`jgeo:` https://thisisshubhamkumar.github.io/myip/jgeo.html
 
-`base:` https://thisisshubhamkumar.github.io/myip/jQuery.html
+`jQuery:` https://thisisshubhamkumar.github.io/myip/jQuery.html
 
 
 
