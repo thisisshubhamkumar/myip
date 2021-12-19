@@ -9,9 +9,14 @@ ip address of client
 
 `base:` https://thisisshubhamkumar.github.io/myip/base.html
 
-`base:` https://thisisshubhamkumar.github.io/myip/base.html
 
-`base:` https://thisisshubhamkumar.github.io/myip/base.html
+`base:` https://thisisshubhamkumar.github.io/myip/map.html
 
-https://ip-api.com/docs/api:json#test - http://ip-api.com/json/1.1.1.1?fields=66846719
+`base:` https://thisisshubhamkumar.github.io/myip/jgeo.html
+
+`base:` https://thisisshubhamkumar.github.io/myip/jQuery.html
+
+
+
+http://ip-api.com/json - https://ip-api.com/docs/api:json#test - http://ip-api.com/json/1.1.1.1?fields=66846719
 
