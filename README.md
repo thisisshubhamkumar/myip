@@ -18,6 +18,8 @@ ip address of client
 
 `timeloc:` https://thisisshubhamkumar.github.io/myip/timeloc.html
 
+`gps:` https://thisisshubhamkumar.github.io/myip/gps.html
+
 
 - https://ip-api.com/docs/api:json#test
 - http://ip-api.com/json/1.1.1.1?fields=66846719
