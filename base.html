@@ -11,13 +11,14 @@
             document.getElementsByTagName("head")[0].appendChild(script);
         };
         function DisplayIP(response) {
-            document.getElementById("ipaddress").innerHTML = "Your IP Address is " + btoa(response.ip);
+            document.getElementById("ipaddress").innerHTML = "Base64 IP Address: " + btoa(response.ip);
         }
     </script>
 </head>
 <body>
     <span id="ipaddress"></span>
-    <style>
+</body>
+  <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
    		body {
    			background: white;
@@ -36,5 +37,4 @@
    			font-family: sans-serif;
    		}
    </style>
-</body>
 </html>
