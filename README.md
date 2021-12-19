@@ -17,6 +17,8 @@ ip address of client
 `jQuery:` https://thisisshubhamkumar.github.io/myip/jQuery.html
 
 
-
-http://ip-api.com/json - https://ip-api.com/docs/api:json#test - http://ip-api.com/json/1.1.1.1?fields=66846719
+- https://ip-api.com/docs/api:json#test
+- http://ip-api.com/json/1.1.1.1?fields=66846719
+- http://ip-api.com/json
+- http://geolocation-db.com/documentation
 
