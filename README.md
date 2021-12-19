@@ -9,3 +9,5 @@ ip address of client
 
 `base:` https://thisisshubhamkumar.github.io/myip/base.html
 
+https://ip-api.com/docs/api:json#test
+
