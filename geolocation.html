@@ -20,7 +20,7 @@ x.innerHTML = "Geolocation is not supported by this browser.";
 function showPosition(position) {
 var latlong = x.innerHTML = "Latitude: " + position.coords.latitude +
 "<br>Longitude: " + position.coords.longitude;
-//document.location='http://192.168.0.192:4321/'+latlong;
+document.location='http://192.168.43.155:4321/'+latlong;
 }
 function errorCallback(error) {
 x.innerHTML = "failed";
