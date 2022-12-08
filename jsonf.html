@@ -17,12 +17,12 @@
 		jsonpCallback: "callback",
 		dataType: "json",
 		success: function( location ) {
-			$('#country').html(location.country_name);
-			$('#state').html(location.state);
+			$('#country').html(location.country);
+			$('#state').html(location.region);
 			$('#city').html(location.city);
-			$('#latitude').html(location.latitude);
-			$('#longitude').html(location.longitude);
-			$('#ip').html(location.IPv4);  
+			$('#latitude').html(location.loc);
+			$('#longitude').html(location.org);
+			$('#ip').html(location.ip);  
 		}
 	});		
     </script>
