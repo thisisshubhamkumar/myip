@@ -9,7 +9,8 @@
 
     <script>
 	$.ajax({
-		url: "http://ip-api.com/json/",
+		url: "https://ip-api.com/json/",
+		jsonCallback: "callback",
 		dataType: "json",
 		success: function( location ) {
 			$('#status').html(location.status;
