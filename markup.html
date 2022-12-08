@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Geolocation DB - jQuery example</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title>Geolocation DB - javascript example</title>
 </head>
 <body>
     <div>Country: <span id="country"></span>
@@ -12,19 +11,32 @@
     <div>Longitude: <span id="longitude"></span>
     <div>IP: <span id="IPv4"></span>
     <script>
-	$.ajax({
-		url: "https://geolocation-db.com/jsonp",
-		jsonpCallback: "callback",
-		dataType: "jsonp",
-		success: function( location ) {
-			$('#country').html(location.country_name);
-			$('#state').html(location.state);
-			$('#city').html(location.city);
-			$('#latitude').html(location.latitude);
-			$('#longitude').html(location.longitude);
-			$('#ip').html(location.IPv4);  
-		}
-	});		
+    
+	var country = document.getElementById('country');
+	var state = document.getElementById('state');
+	var city = document.getElementById('city');
+	var postal = document.getElementById('postal');
+	var latitude = document.getElementById('latitude');
+	var longitude = document.getElementById('longitude');
+	var ip = document.getElementById('ipv4');
+               
+	function callback(data)
+	{
+		country.innerHTML = data.country_name;
+		state.innerHTML = data.state;
+		city.innerHTML = data.city;
+		postal.innerHTML = data.postal;
+		latitude.innerHTML = data.latitude;
+		longitude.innerHTML = data.longitude;
+		ip.innerHTML = data.IPv4;
+	}
+
+	var script = document.createElement('script');
+	script.type = 'text/javascript';
+	script.src = 'https://geolocation-db.com/jsonp';
+	var h = document.getElementsByTagName('script')[0];
+	h.parentNode.insertBefore(script, h);
+	           
     </script>
 </body>
 </html>
