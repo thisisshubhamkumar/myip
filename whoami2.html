@@ -5,28 +5,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-    <div>IP: <span id="query"></span>
-    <div>Country: <span id="status"></span>
-    <div>State: <span id="state"></span>
-    <div>City: <span id="city"></span>
-    <div>Loc: <span id="latitude"></span>
-    <div>Org: <span id="org"></span>
-    <div>Postal: <span id="as"></span>
-    <div>Timezone: <span id="timezone"></span>
+    <div>status: <span id="status"></span>
+
     <script>
 	$.ajax({
 		url: "http://ip-api.com/json/",
 		jsonpCallback: "callback",
 		dataType: "json",
 		success: function( location ) {
-			$('#country').html(location.status;
-			$('#state').html(location.region);
-			$('#city').html(location.city);
-			$('#latitude').html(location.loc);
-			$('#org').html(location.org);
-			$('#ip').html(location.query);  
-			$('#postal').html(location.as);  
-			$('#timezone').html(location.timezone);  
+			$('#status').html(location.status;
 		}
 	});		
     </script>
