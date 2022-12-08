@@ -10,7 +10,9 @@
     <div>City: <span id="city"></span>
     <div>Latitude: <span id="latitude"></span>
     <div>Longitude: <span id="longitude"></span>
-    <div>IP: <span id="IPv4"></span>
+    <div>IP: <span id="ip"></span>
+    <div>postal: <span id="postal"></span>
+    <div>timezone: <span id="timezone"></span>
     <script>
 	$.ajax({
 		url: "https://ipinfo.io/json",
@@ -23,6 +25,8 @@
 			$('#latitude').html(location.loc);
 			$('#longitude').html(location.org);
 			$('#ip').html(location.ip);  
+			$('#postal').html(location.postal);  
+			$('#timezone').html(location.timezone);  
 		}
 	});		
     </script>
