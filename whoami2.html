@@ -10,7 +10,6 @@
     <script>
 	$.ajax({
 		url: "http://ip-api.com/json/",
-		jsonpCallback: "callback",
 		dataType: "json",
 		success: function( location ) {
 			$('#status').html(location.status;
